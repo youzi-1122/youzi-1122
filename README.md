@@ -64,6 +64,16 @@
   <img width="60%" src="https://streak-stats.demolab.com?user=youzi-1122&theme=tokyonight&hide_border=true" alt="GitHub streak" />
 </p>
 
+## 🐍 Contribution Snake
+
+<p align="center">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/youzi-1122/youzi-1122/output/github-snake-dark.svg" />
+    <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/youzi-1122/youzi-1122/output/github-snake.svg" />
+    <img width="100%" alt="GitHub contribution snake" src="https://raw.githubusercontent.com/youzi-1122/youzi-1122/output/github-snake.svg" />
+  </picture>
+</p>
+
 <h3 align="center">⚡ Keep coding. Keep creating.</h3>
 
 <img width="100%" src="https://capsule-render.vercel.app/api?type=waving&height=100&color=0:0f172a,50:4338ca,100:06b6d4&section=footer" alt="Footer" />
