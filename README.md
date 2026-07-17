@@ -7,21 +7,32 @@
 <br />
 
 <img src="https://komarev.com/ghpvc/?username=youzi-1122&label=PROFILE+VIEWS&color=6366f1&style=flat-square" alt="Profile views" />
-<img src="https://img.shields.io/github/followers/youzi-1122?label=FOLLOWERS&style=flat-square&color=06b6d4" alt="GitHub followers" />
 
 </div>
 
 ## 👨‍💻 About Me
 
-- 🔭 后端与基础设施工程师，专注 Go、Kubernetes 和云原生
-- ⚙️ 关注系统可靠性、可观测性、自动化与交付工程
-- 🌐 活跃参与 Ongrid 与 Liaison 开源项目
-- 💡 Build useful things. Solve real problems.
+- 🔭 Backend & Infrastructure Engineer building reliable cloud-native systems
+- ⚙️ Open-source contributor working mainly with Go and Kubernetes
+- 🧭 Interested in observability, automation, and developer-facing infrastructure
+- 💡 I build useful things that solve real operational problems
+
+## 🚧 Current Focus
+
+- Building infrastructure-aware AI agents for Kubernetes operations
+- Improving secure connectivity for devices and applications behind NAT
+- Making infrastructure easier to observe, operate, release, and recover
 
 ## 🧰 Tech Stack
 
 <p align="center">
-  <img src="https://skillicons.dev/icons?i=go,java,py,bash,linux,docker,kubernetes,git,githubactions,mysql,redis&perline=11" alt="Tech stack" />
+  <strong>Core</strong><br /><br />
+  <img src="https://skillicons.dev/icons?i=go,kubernetes,linux,docker,bash" alt="Core technologies: Go, Kubernetes, Linux, Docker, and Bash" />
+</p>
+
+<p align="center">
+  <strong>Tooling & Data</strong><br /><br />
+  <img src="https://skillicons.dev/icons?i=git,githubactions,mysql,redis,py,java" alt="Tooling and data technologies: Git, GitHub Actions, MySQL, Redis, Python, and Java" />
 </p>
 
 ## 🌐 Open Source Contributions
@@ -36,6 +47,7 @@
         <img src="https://img.shields.io/github/stars/ongridio/ongrid?style=flat-square&color=6366f1" alt="Ongrid stars" />
         <img src="https://img.shields.io/github/last-commit/ongridio/ongrid?style=flat-square&color=06b6d4" alt="Ongrid last commit" />
       </p>
+      <p><a href="https://github.com/ongridio/ongrid/pulls?q=is%3Apr+is%3Amerged+author%3Ayouzi-1122"><strong>View my merged PRs →</strong></a></p>
     </td>
     <td width="50%" valign="top">
       <h3>🔐 <a href="https://github.com/liaisonio/liaison">liaisonio/liaison</a></h3>
@@ -45,6 +57,7 @@
         <img src="https://img.shields.io/github/stars/liaisonio/liaison?style=flat-square&color=6366f1" alt="Liaison stars" />
         <img src="https://img.shields.io/github/last-commit/liaisonio/liaison?style=flat-square&color=06b6d4" alt="Liaison last commit" />
       </p>
+      <p><a href="https://github.com/liaisonio/liaison/pulls?q=is%3Apr+is%3Amerged+author%3Ayouzi-1122"><strong>View my merged PRs →</strong></a></p>
     </td>
   </tr>
 </table>
@@ -52,16 +65,7 @@
 ## 📊 GitHub Stats
 
 <p align="center">
-  <img width="49%" src="https://github-profile-summary-cards.vercel.app/api/cards/stats?username=youzi-1122&theme=tokyonight" alt="GitHub stats" />
-  <img width="49%" src="https://github-profile-summary-cards.vercel.app/api/cards/repos-per-language?username=youzi-1122&theme=tokyonight" alt="Top languages" />
-</p>
-
-<p align="center">
   <img width="98%" src="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=youzi-1122&theme=tokyonight" alt="GitHub profile details" />
-</p>
-
-<p align="center">
-  <img width="60%" src="https://streak-stats.demolab.com?user=youzi-1122&theme=tokyonight&hide_border=true" alt="GitHub streak" />
 </p>
 
 ## 🐍 Contribution Snake
