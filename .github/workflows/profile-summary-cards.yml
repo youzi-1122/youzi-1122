@@ -1,0 +1,93 @@
+name: Generate profile summary cards
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: "0 0 * * *"
+  push:
+    branches:
+      - main
+    paths:
+      - ".github/workflows/profile-summary-cards.yml"
+
+permissions: {}
+
+jobs:
+  generate:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+    steps:
+      - name: Check out profile repository
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+
+      - name: Generate profile summary cards
+        uses: vn7n24fzkq/github-profile-summary-cards@d9632798b299e9ad6940449a859c30742eb5b549 # v0.12.0
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        with:
+          USERNAME: youzi-1122
+          BRANCH_NAME: main
+          UTC_OFFSET: 8
+          THEME: tokyonight
+          AUTO_PUSH: false
+
+      - name: Validate generated profile card
+        shell: bash
+        run: |
+          set -euo pipefail
+          card="profile-summary-card-output/tokyonight/0-profile-details.svg"
+          test -s "$card"
+          test "$(wc -c < "$card")" -le 1000000
+          grep -Eq '<svg([[:space:]>])' "$card"
+          if grep -Eqi '<script|javascript:' "$card"; then
+            echo "Unsafe SVG content detected"
+            exit 1
+          fi
+
+      - name: Upload validated profile card
+        uses: actions/upload-artifact@043fb46d1a93c77aae656e7c1c64a875d1fc6a0a # v7
+        with:
+          name: profile-details
+          path: profile-summary-card-output/tokyonight/0-profile-details.svg
+          if-no-files-found: error
+          retention-days: 1
+
+  publish:
+    needs: generate
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - name: Check out profile repository
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+
+      - name: Download validated profile card
+        uses: actions/download-artifact@3e5f45b2cfb9172054b4087a40e8e0b5a5461e7c # v8
+        with:
+          name: profile-details
+          path: .generated
+
+      - name: Publish profile card
+        shell: bash
+        run: |
+          set -euo pipefail
+          source_card=".generated/0-profile-details.svg"
+          target_card="profile-summary-card-output/tokyonight/0-profile-details.svg"
+          test -s "$source_card"
+          test "$(wc -c < "$source_card")" -le 1000000
+          grep -Eq '<svg([[:space:]>])' "$source_card"
+          if grep -Eqi '<script|javascript:' "$source_card"; then
+            echo "Unsafe SVG content detected"
+            exit 1
+          fi
+          install -D -m 0644 "$source_card" "$target_card"
+          if git diff --quiet -- "$target_card"; then
+            echo "Profile card is already current"
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -- "$target_card"
+          git commit -m "chore: refresh profile summary card"
+          git push origin HEAD:main
