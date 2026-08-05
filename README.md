@@ -77,7 +77,7 @@
 ## 📊 GitHub Stats
 
 <p align="center">
-  <img width="98%" src="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=youzi-1122&theme=tokyonight" alt="GitHub profile details" />
+  <img width="98%" src="./profile-summary-card-output/tokyonight/0-profile-details.svg" alt="GitHub profile details" />
 </p>
 
 ## 🐍 Contribution Snake
