@@ -60,6 +60,18 @@
       <p><a href="https://github.com/liaisonio/liaison/pulls?q=is%3Apr+is%3Amerged+author%3Ayouzi-1122"><strong>View my merged PRs →</strong></a></p>
     </td>
   </tr>
+  <tr>
+    <td colspan="2" valign="top">
+      <h3>🤖 <a href="https://github.com/NousResearch/hermes-agent">NousResearch/hermes-agent</a></h3>
+      <p>A self-improving AI agent with tools, skills, memory, and multi-platform integrations.</p>
+      <p><strong>Contributing across:</strong> provider validation, asynchronous runtime reliability, model compatibility, and regression testing.</p>
+      <p>
+        <img src="https://img.shields.io/github/stars/NousResearch/hermes-agent?style=flat-square&color=6366f1" alt="Hermes Agent stars" />
+        <img src="https://img.shields.io/github/last-commit/NousResearch/hermes-agent?style=flat-square&color=06b6d4" alt="Hermes Agent last commit" />
+      </p>
+      <p><a href="https://github.com/NousResearch/hermes-agent/pull/77695"><strong>View my merged contribution →</strong></a></p>
+    </td>
+  </tr>
 </table>
 
 ## 📊 GitHub Stats
