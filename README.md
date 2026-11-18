@@ -23,13 +23,6 @@
 - Improving secure connectivity for devices and applications behind NAT
 - Making infrastructure easier to observe, operate, release, and recover
 
-## 🤖 AI Agent Engineering
-
-- **Tool integration.** In Ongrid, I exposed infrastructure tools through MCP with scoped permissions and made large tool results queryable outside the model’s context window. [MCP access](https://github.com/ongridio/ongrid/pull/556) · [Tool results](https://github.com/ongridio/ongrid/pull/593)
-- **Diagnosis and evaluation.** I updated Ongrid’s investigator to distinguish observations from hypotheses and built replayable incident cases to test its conclusions. [Investigator prompts](https://github.com/ongridio/ongrid/pull/585) · [Evaluation cases](https://github.com/ongridio/ongrid/pull/584)
-- **Approvals and tracing.** I added human review for restricted host commands and OpenTelemetry tracing for model calls, tool steps, and token usage. [Command approval](https://github.com/ongridio/ongrid/pull/588) · [Agent tracing](https://github.com/ongridio/ongrid/pull/506)
-- **Runtime reliability.** In Hermes Agent, I made provider validation asynchronous so a slow model endpoint would no longer block other dashboard requests. [Hermes Agent fix](https://github.com/NousResearch/hermes-agent/pull/77695)
-
 ## 🧰 Tech Stack
 
 <p align="center">
