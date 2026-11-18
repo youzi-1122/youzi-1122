@@ -1,8 +1,8 @@
 <div align="center">
 
-<img width="100%" src="https://capsule-render.vercel.app/api?type=waving&height=230&color=0:0f172a,50:4338ca,100:06b6d4&text=YOUZI&fontColor=ffffff&fontSize=52&fontAlignY=38&animation=fadeIn&desc=Backend%20%7C%20Infrastructure%20%7C%20Open%20Source&descAlignY=60" alt="Youzi banner" />
+<img width="100%" src="https://capsule-render.vercel.app/api?type=waving&height=230&color=0:0f172a,50:4338ca,100:06b6d4&text=YOUZI&fontColor=ffffff&fontSize=52&fontAlignY=38&animation=fadeIn&desc=Backend%20%7C%20Infrastructure%20%7C%20AI%20Agent%20%7C%20Open%20Source&descAlignY=60" alt="Youzi — Backend | Infrastructure | AI Agent | Open Source" />
 
-<img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=23&pause=1000&color=22D3EE&center=true&vCenter=true&width=650&lines=Hi%2C+I'm+Youzi+%F0%9F%91%8B;Go+%7C+Kubernetes+%7C+Infrastructure;Open-source+contributor;Keep+building%2C+keep+learning." alt="Typing animation" />
+<img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=23&pause=1000&color=22D3EE&center=true&vCenter=true&width=650&lines=Hi%2C+I'm+Youzi+%F0%9F%91%8B;Go+%7C+Kubernetes+%7C+Infrastructure+%7C+AI+Agent;Open-source+contributor;Keep+building%2C+keep+learning." alt="Go | Kubernetes | Infrastructure | AI Agent" />
 
 <br />
 
